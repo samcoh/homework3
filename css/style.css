@@ -62,8 +62,8 @@ a{
 table{
   border: 2px solid black;
 
-  border-radius: 15px;
-  border-collapse:separate;
+  border-radius: 17px;
+  border-collapse: separate;
   /*border-style: none;*/
   /*border-style: none solid none solid;*/
   /*border-width: 2px;*/
@@ -111,12 +111,15 @@ td{
   */
 
   text-align: center;
-  border-top: 2px solid #000000;
   /*border-top: 2px solid #000000;*/
+  border-top: 2px solid #000000;
 
 }
 
 tr{
+  /*border-left: 2px solid #000000;*/
+  /*border-right: 2px solid #000000;*/
+
 
   /*border-top: 2px solid #000000;*/
 
@@ -130,27 +133,32 @@ tr{
 tr:nth-child(odd){
   background-color: #D1D1D1;
 }
-
 tr:hover  {
   background-color: rgba(126, 8, 32, 0.5);
 }
+
+
 thead tr:first-child th:first-child{
 /*first head of the first cell*/
   border-top-left-radius: 15px;
 
 }
 thead tr:last-child th:last-child{
-/*first head of the first cell*/
+/*last head of the last cell*/
   border-top-right-radius: 15px;
 }
 
+tbody tr:first-child td:first-child {
+  /*first row of the first cell*/
+  border-bottom-left-radius: 15px;
+}
+
 tbody tr:last-child td:last-child{
+   /*last row of the last cell*/
   border-bottom-right-radius: 15px;
 
 }
-tbody tr:first-child td:first-child {
-  border-bottom-left-radius: 15px ;
-}
+
 
 footer{
   position:fixed;
