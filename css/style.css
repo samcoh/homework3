@@ -23,9 +23,6 @@ body{
   background-repeat: no-repeat;
 }
 
-:focus{
-  border: 2px solid #000000;
-}
 
 main{
   margin-bottom: 100px;
@@ -62,18 +59,8 @@ a{
 table{
   border: 2px solid black;
 
-  border-radius: 17px;
+  border-radius: 15px;
   border-collapse: separate;
-  /*border-style: none;*/
-  /*border-style: none solid none solid;*/
-  /*border-width: 2px;*/
-  /*border-color: black;*/
-  /*border-collapse: collapse;*/
-  /*border-style: hidden;*/
-  /*border-top-left-radius: 15px;*/
-  /*border-top-right-radius: 15px;*/
-
-
 
  /*Should be centered on a large screen*/
   margin-right: auto;
@@ -94,13 +81,7 @@ table{
 
 .rowhead{
 
-  /*border-left: 2px solid #000000;*/
-  border-top: 2px solid #000000
-  /*border: 2px solid black;*/
-  /*outline-style: solid;*/
-  /*outline-color: #000000;*/
-
-
+  border-top: 2px solid #000000;
 
 }
 
@@ -116,48 +97,44 @@ td{
 
 }
 
-tr{
-  /*border-left: 2px solid #000000;*/
-  /*border-right: 2px solid #000000;*/
 
-
-  /*border-top: 2px solid #000000;*/
-
+*:focus{
+  border: 2px solid #000000;
 }
-
-*{}
-
 /*Every odd numbered table row has a grey background
 (#D1D1D1), every even table row has a transparent background.
 */
+
 tr:nth-child(odd){
   background-color: #D1D1D1;
 }
-tr:hover  {
-  background-color: rgba(126, 8, 32, 0.5);
-}
 
+tr:hover{
+  background-color: rgba(126, 8, 32, 0.5);
+  /*transition-delay:1s;*/
+
+}
 
 thead tr:first-child th:first-child{
 /*first head of the first cell*/
   border-top-left-radius: 15px;
 
 }
-thead tr:last-child th:last-child{
+thead tr:last-child th:last-child {
 /*last head of the last cell*/
   border-top-right-radius: 15px;
 }
 
-tbody tr:first-child td:first-child {
-  /*first row of the first cell*/
+tbody tr:last-child th.rowhead{
+  /*last row of the last table head in the class rowhead */
   border-bottom-left-radius: 15px;
 }
-
-tbody tr:last-child td:last-child{
+tbody tr:last-child td:last-child {
    /*last row of the last cell*/
   border-bottom-right-radius: 15px;
 
 }
+
 
 
 footer{
