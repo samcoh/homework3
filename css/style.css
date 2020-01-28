@@ -92,7 +92,6 @@ td{
   */
 
   text-align: center;
-  /*border-top: 2px solid #000000;*/
   border-top: 2px solid #000000;
 
 }
@@ -111,7 +110,6 @@ tr:nth-child(odd){
 
 tr:hover{
   background-color: rgba(126, 8, 32, 0.5);
-  /*transition-delay:1s;*/
 
 }
 
@@ -153,9 +151,3 @@ footer > p {
 
 }
 
-/*.rowhead:focus{*/
-  /*border: 2px solid #000000;*/
-  /*outline-style: solid;*/
-  /*outline-color: #000000;*/
-
-/*}*/
